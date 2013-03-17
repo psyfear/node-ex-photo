@@ -9,6 +9,8 @@ set :user, 'psyfear'
 set :scm, :git
 set :scm_user, 'psyfear'
 
+default_run_options[:pty] = true
+
 server "psyfear.com", :app, :web, :db, :primary => true
 
 # if you want to clean up old releases on each deploy uncomment this:
